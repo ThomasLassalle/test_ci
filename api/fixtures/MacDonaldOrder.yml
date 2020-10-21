@@ -1,0 +1,6 @@
+App\Entity\MacDonaldOrder:
+    order_{1..100}:
+        name: <name()>
+        status: <randomElement(['En préparation', 'Prêt', 'Emporté'])>
+        total: <numberBetween(1, 100)>
+        customer: '@customer_*'
